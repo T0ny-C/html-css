@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /* Box- Level */
+
+            /* display: inline; */
+
+            background-color: rgb(63, 63, 107);
+
+            height: 300;
+            width: 300; /* Box-size  */
+
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: rgb(97, 55, 102); */
+            
+            border: 5px solid #38406b;     
+            
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            margin: 40px 20px;
+
+            /* Para centralizar uma caixa utilizamos o Margin: auto
+        TIPOS DE BORDER STYLE:
+            solid  = cor sólida
+            dashed = tracejado
+            dotted = pontilhadinho
+            double = linha dupla
+            groove = margem 3d (tridimensional)*/
+
+            /* padding-top: ;
+            padding-rigth: ;
+            padding-bottom: ;
+            padding-right: ; */
+            padding: 10px 15px;
+            /*
+        TIPOS DE BORDER STYLE:
+            solid  = cor sólida
+            dashed = tracejado
+            dotted = pontilhadinho
+            double = linha dupla
+            groove = margem 3d (tridimensional) 
+                  
+        
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: ;*/
+            outline: 10px double #45c06a;
+        }   
+        a{ /* Inline-Level 
+            display: block;*/
+            /*border-width: 12px;
+            border-style: solid;
+            border-color: lightblue;*/
+            border: 12px solid lightblue;
+
+            padding:5px 10px;            
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+             padding é da borda para dentro 
+               margim é da borda para fora  
+            Quando eu coloco um valor : 
+            vai ser cima, direita, baixo e esquerda esse valor;
+            quando eu coloco dois valores :
+            o primeiro vai ser pra cima e pra baixo e o segundo pra direita e para a esquerda;*/
+               
+            
+        }        
+        /* Para alterar um elemento que por padrão seja inline-level utilizamos o display: block, e para um que por padrão seja box-level utilizamos o display: inline, e tambem temos a propriedade para os dois que é o display: inline-block, onde este eu posso configurar altura e lergura dele como um box-level */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragráfos tambem são exemplos de box level, mas os <a href="#">Links são exemplos de caixas inline level</a> vamos ver como tudo funciona   </p>
+    <p>Exemplo de shorthand com Padding:</p>
+    <ol type="1">
+        <li>TOP (CIMA)
+        <LI>RIGTH (DIREITA)
+        <li>BOTTOM (BAIXO)
+        <li>LEFT (ESQUERDA)
+    </ol>
+    <p>Nesse caso quando temos os quatro valores definidos, mas quando temos 2 o pimeiro é para cima e para baixo, e o segundo é para direita e esquerda, quando tem um valor somente ele vale para todos os lados </p>
+    <p>Exemplo de shorthand com Margin: </p>
+    <p><strong>Aplica-se os mesmos fundamentos de shorthand de padding em margin também </strong>sendo assim ficamos desse jeito:</p>
+    <ol>
+        
+        <li>TOP (CIMA)
+            <LI>RIGTH (DIREITA)
+            <li>BOTTOM (BAIXO)
+            <li>LEFT (ESQUERDA)
+    </ol>
+    <p>Exemplo de shorthand com BORDER </p>
+    <a href="caixa02.html">Vá para a pagina 2</a>
+    <a href="caixa00.html">Vá para a página Principal</a>
+</body>
+</html>

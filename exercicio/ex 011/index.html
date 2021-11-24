@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Iconsmind-Outline-Folder-Video.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinânima</H1> 
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture >
+    <p>A tag utilizada para adicionar imagens no seu site é &lt; picture &gt; <br> E em seguida utilize o &lt; source: media type &gt; para as imagens se adequar para o visitante dependendo de qual aparelho móvel ele está acessando </p>
+    <p>Seguindo a ordem das imagens de cima para baixo e da maior para menor </p>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios m html5.</p>
+    <!--  OUTRA FORMA DE ADICIONAR AUDIO NO MEU CÓDIGO <audio src="midia/Reasons_to_Smile.mp3" controls autoplay></audio>
+    <!-- MP3(mpeg), WAV(wav) e OGG (ogg)-->
+    <p>Uma forma de adicionar audios é quase parecido da forma acima mas desse ultima tentativa é voce mesmo que vai digitar os sources e os types. Veja:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo mp3</a> </p>
+    </audio>
+    <p>Atributos da tag source (mais utilizados) </p>
+    <ul Type="circle">
+        <li> TYPE: vai indicar o media type da imagem que usamos </li>
+        <li> SRCSET: vai configurar o nome da imagem que sera carregada quando o tamanho indicado for atingido </li>
+        <li> MEDIA: indica o tamanho maximo a ser considerado para carregar a imagem indicada no atributo SRCSET</li>
+    </ul>
+    <p><strong>O gustavo guanabara não recomenda utilizar arquivos <i>WAVE</i> porque eles são muito mas muito pesados e isso difilculta o acesso de pessoas no site</strong></p>
+    <ol type="I">
+        <p>Tipos de preload dentro de audio</p>
+        <li>Metadata</li>
+        <li>None</li>
+        <li>Auto (padrão) </li>
+    </ol>
+    <ul type="square" >
+        <p>Outros parametros para audio </p>
+        <li>Autoplay</li>
+        <li>Controls</li>
+        <li>Loop</li>
+        <li>Preload</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*
+em Html é id  = em CSS é # (só pode um elemento)
+em HTML é class = em CSS é . (pode varios elementos )
+*/
+/* Podemos chamar as id de seletores específicos e
+as class de seletores coletivos podendo ou não ter o mesmo nome
+*/
+/* Para chamar as id´s podemos somente dizer a # e o nome da id (no CSS) */
+/* Para chama as class podemos somente dizer o . e o nome da class (no CSS) */
+/* Dentro de um mesmo documento NÃO podemos colocar o mesmo nome para todas as id  */
+/*
+    H1{} -> GENERICO AGE EM TODOS OS H1
+    <H1 id = "exemplo" ></H1> -> age por cima com a id 
+    <h1 class="exemplo" ></h1 -> as classes ficam abaixo do nivelamento comparado ao id
+*/
+body {
+    background-color: #93aee9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: rgba(4, 93, 109, 0.733);
+}
+/* Elementos padding na sua sequencia correta: 0 20px 20px 20px (-> superior (cima), direita, (inferior) abaixo e esquerda.
+Border : 5px solid black (isso simplesmente define uma borda preta sólida de 5 pixels de largura em todos os lados do corpo.) 
+margin: 0 auto; — Quando você define dois valores em uma propriedade como margin ou padding, o primeiro valor afeta a parte superior do elemento e a parte inferior (tornando-os 0 nesse caso), e no segundo valor os lados esquerdo e direito (aqui, auto é um valor especial que divide o espaço horizontal uniformemente entre esquerda e direita). Você também pode utilizar um, três ou quatro valores 
+ Width : largura */
+
+#principal {
+    text-align: center; /* alinhamento do texto ao centro por exemplo */
+    font-size: 2em; /* tamanho da fonte  */
+    color: rgb(132, 107, 201);/* cor da letra lilás por exemplo */
+    background-color: rgb(59, 138, 59); /* plano de fundo da cor (por trás da letra) */
+}
+
+h2 {
+    color: rgb(44, 66, 116);              
+}
+.basico {
+    text-align: left;
+    color: #153243 ;
+    font-weight: bold; /* Peso da fonte (negrito ou não) */
+    background-color: #839073;
+}
+.intermediario {
+    text-align: left;
+    color: #8a063d ;
+    background-color: #395756;
+}
+.avancado{
+    text-align: left;
+    color: #dd1717 ;
+    background-color: #C5D86D;
+}

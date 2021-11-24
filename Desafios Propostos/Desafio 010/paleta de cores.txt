@@ -1,0 +1,13 @@
+cor 1 - #3B6132
+
+cor 2 - #C4E6BC
+
+cor 3 - #88E075
+
+cor 4 - #53614F
+
+cor 5 - #69AD5A
+
+
+
+FONTE : BEBAS NEUE

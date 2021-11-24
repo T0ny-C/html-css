@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block; /* na mesma linha */
+            background-color: #4dabca;
+            border: 1px solid black; /* exemplo de shorthand (largura tipo cor) */
+            text-align: center;
+            height: 200px; /* ALTURA */
+            width: 200px; /* LARGURA */
+            box-shadow: 50px;
+        }
+        div:hover { /* hover : passando o mouse por cima ele faz algo */
+            background-color: rgb(151, 105, 72);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 10px;
+        }
+        body {
+            background-color:#99b9c4 ;
+        }
+        
+        .nome:focus{
+            background-color: #2a4931;
+            color: white;
+        }
+        .sobrenome:focus {
+            background-color: black;
+            color: tomato;
+        }
+        P {
+            font-family: cursive;
+            font-size: 1.8em;
+            color: rgb(107, 107, 44);
+        }
+    </style>
+</head>
+<body>
+    <div id="01" >01</div>
+    <div id="02" >02</div>
+    <div id="03" >03</div>
+    <input type="text" class="nome" value="Esse elemento ficará verde após ser focado"</input>
+    <input type="text" class="sobrenome" value="Esse elemento ficará preto após ser focado" >
+    <p>As Pseudo classes agem diretamente nas características (adjetivos) do meu HTML </p>
+    <p>Já os Pseudo elementos agem diretamente no conteudo do meu HTML sem estar no html de forma direta mas sim no CSS</p>
+
+    
+</body>
+</html>

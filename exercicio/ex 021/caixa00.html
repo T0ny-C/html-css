@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo para usar as Grouping Tags</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+
+        header{
+            background-color: rgb(182, 255, 204);
+            padding: 5px;
+            border-radius: 10px 20px 30px 40px;
+            margin: 5px;
+        }
+
+        main{
+            background-color: rgb(169, 180, 127);
+            padding: 5px;
+            border-radius: 10px 20px ;
+            margin: 5px;
+        }
+
+        h2{
+            text-align: center;
+            background-color: cornsilk;
+        }
+
+        article > p {
+            background-color: rgb(61, 150, 120);
+            color: white;
+            padding: 2px;
+        }
+
+        footer{
+            background-color: rgb(182, 222, 255);
+            padding: 5px;
+            text-align: center;
+            border-radius: 10px 0px ;
+            margin: 5px;
+        }
+        footer > aside{
+            background-color: rgb(233, 166, 188);
+            ;
+        }
+
+        aside > p{
+            background-color: rgb(255, 255, 145);
+            padding: 5px;
+            text-align: justify;
+        }
+
+        article > aside{
+            text-align: left;
+            background-color: rgb(233, 166, 188);
+            color: black;
+        }
+
+        a{
+            padding-right: 5px;
+        }
+
+        #especial{
+            font-size: 5em;
+        }
+
+        .diferentao{
+            background-color: rgb(77, 146, 143);;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="especial" >Página principal</h1>
+        <h1>Esse texto está dentro de uma header</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a> <br>
+            <a href="caixa02.html">Entre para minha segunda página </a> <br>
+            <a href="caixa01.html">Entre para minha primeira pagina </a>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título 1</h2>
+                <p>Texto do artigo </p>
+                <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates adipisci assumenda omnis, porro iste explicabo saepe voluptate debitis dignissimos amet consequuntur nam ipsam modi ut, distinctio reiciendis vero doloribus?</aside>
+            </article>
+            <article>
+                <h2>Titulo 2</h2>
+                    <p>Exemplo de texto e modelo proposto pelo guanabara para tipos de caixas</p>
+                    <aside>Conteúdo periférico do artigo</aside>                
+            </article>
+            <h2>Titulo 3</h2>
+        </section>
+        <article>
+            <p class="diferentao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laudantium ipsum corrupti quas facere, delectus reprehenderit est, fugit culpa aspernatur dolore itaque quod eveniet labore, reiciendis recusandae blanditiis distinctio natus?</p>
+            <aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illum repudiandae itaque totam necessitatibus? Ipsam harum similique eius voluptatibus omnis, illo reiciendis eos doloribus facere autem ea natus amet odio!</aside>
+        </article>
+    </main>
+    <footer>
+        <p>Exemplo de rodapé para colocar no meu site </p>
+        <aside>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis at omnis facilis praesentium sed aspernatur earum aperiam illum nisi ipsam, aliquam nulla. Nam perferendis recusandae amet, tempora error et deserunt.</aside>
+    </footer>
+    
+</body>
+</html>

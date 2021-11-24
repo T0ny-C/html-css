@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+    *{ /* Configurações globais  */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    body{
+    background-image: linear-gradient(to right, #316153, #6ddfbd);
+
+}
+/*sempre que voce for trablhar com monocromia pegue a cor que vpce já escolheu e arraste para baixo para ver da mesma cor só que com um tom mais escuro tlgd*/
+    main{ /* a tag main é como uma div especial, é como uma parte do texto que eu digo que é meu conteúdo principal tlgd */
+    background-color: white;
+    border-radius: 25px; /* borda arredondada ex: 10px*/
+    box-shadow: 5px 5px 15px #000000;/* sombreamento quanto ela vai andar  para o lado esquerdo, para baixo, quanto essa sombra vai se espalhar , e quanto essa sombra de transparência essa cor vai ter*/
+    width: 600px; /* Largura */
+    padding: 10px; /* distancia entre a letra e a margem da borda (acolchoamento)  */
+    margin: auto; /* coloca o conteudo de dentro centralizado independente do tamanho da página */
+}
+    h1{
+        color: #80BFA8;
+        text-align: center;/* texto alinhado no centro*/
+        text-shadow: 1px 1px 2px #4e7265; /* sombreamento do texto  1 pixel pro lado 1 pixel pra baixo e 2 pixels de espalhamento*/
+}
+    h2{
+        color: #a7825f ;
+        text-align: center;
+}
+    p{
+        text-align: justify;
+}

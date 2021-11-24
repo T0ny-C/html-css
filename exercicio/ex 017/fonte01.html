@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex 016/instagram.png" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas :
+        cm (centimetro), mm(milimetro), in (polegada), px (pixels), pt(ponto), pc(paica).
+        Medidas Relativas 
+        em(tamanho atual da letra M na fonte), ex (tamanho da letra X na fonte), rem(medida relativa ao root, descrita no body ), vw(referente a a largura ou prcetangem da view port,) vh(altura da view port), % .
+        16px geralmente é 1em 
+        RECOMENDAÇÃO OFICIAL : px e em
+        */
+        font-size: 1em ;
+        text-align: justify;
+        }
+        h1{
+            /* shorthand font (dando uma maozinha)
+            -font-style -> font weight -> font-size -> font-family
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic; */
+            font: italic bold 3em 'arial','helvetica', 'sans serif';
+        }
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #45e7af;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            color: #049462;
+            
+        }
+        /*Gustavo guanabara recomenda colocar duas fontes especificas e uma genérica para o caso de o sistema não encontrar as específicas, como serifada ou sem serifa, monoespaçada,handwriting ou display */
+        /*  Fontes serifadas não são boas para textos longos, o uso é melhor para titulo serifadas e os subtitulos e paragrafos para fontes não serifadas*/
+        /* Para leituras em pdf´s ou que não sejam em tela é recomendado usar as fontes handwriting  */
+    </style>
+</head>
+<body>
+   
+    
+    <h1>Titulo 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum odio nisi deleniti eligendi facere fuga quam necessitatibus eaque pariatur animi laborum, temporibus rerum dicta libero amet! Quis, deserunt ab.</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit, ipsum atque asperiores illum eligendi eos quidem similique debitis expedita saepe praesentium ullam? Sapiente dolor labore, cumque et similique eum?</p>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+h1{
+    color: sandybrown;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    color: green;
+    background-color: lightsalmon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol{
+    color: blue;
+    background-color: cyan;
+    font-family: 'Times New Roman', Times, serif;
+}
+li{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    color: darkslategrey;
+    background-color: darkviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color:lightcoral;
+    background:navy;
+}
+dt{
+    color: rgb(0, 0, 0);
+    background-color: tomato;
+    font-family: sans-serif;
+}
+dd{
+    color:burlywood;
+    background-color: crimson;
+    font-family: monospace;
+}
+dl{
+    <!-- aq é onde deveria ter alguma cor,mas resolvi deixar sem porque não faria diferença estética alguma no site.   
+}
+

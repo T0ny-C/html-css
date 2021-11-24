@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Neuton:ital@1&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+ /* Seletores Personalizados 
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho dentro de um elemento (pai)nesse caso 
+            
+            )
+        
+        */
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f3816;
+}
+a {
+            color: #8378d9;
+            text-decoration: none; /* tirei o sublinhado*/
+            font-weight: bold;/* PESO DA FONTE*/
+            text-align: right;/* alinhamento do texto  */  
+}
+#emprego:hover {
+    background-color: #1d4424;
+} 
+a:visited {/* Visitado 
+                geralmente links onde eu já abri ficam lilás ou roxos porem com essa pseudoclasse eu posso escolher qual cor vai ficar os sites independente de eu já ter visitado ou não tlgd que maneiro 
+            */
+            color: #000000;
+}/* #a5d343 */
+        /* Pseudoclasses definem estados de elementos dentro da HTML por meio das CSS*/
+ a:hover { 
+            color: black; /* passei o meu mouse ele fica preto */
+            text-decoration: underline; /* passei o meu mouse ele fica sublinhado */ 
+}
+a:active { /* pseudoclasse que quando eu clicar ele fica de uma cor diferente  */
+            color: #3f2dc5;
+}
+        /* Pseudo-elementos podem agir em classes, elementos, id´s e eles mexem diretamente no conteudo periferico do elemento */
+a::before { /* Pseudo-elemento que adiciona algo antes de determinado texto sem estar no HTML e sim no CSS */
+            content: '⇨ ';
+}
+a::after { /* Pseudo-elemento que adiciona algo depois de determinado texto sem estar no HTML e sim no CSS 
+            Nesse caso especifico eu disse que só queria os links desse jeito !!!*/
+            /*Nesse caso específico eu declarei que só queria os de classe "especial" com um simbolo ou algo diferente do demais diferente dos demais Ex: 
+            .deboas::after{
+                text-aling: right
+            }
+            */
+            content: ' ⇦';
+}
+.especial {
+            background-color: #615279;
+}
+.deboas {
+            content: '	&#9731';
+            color: #C2C1C2;
+            background-color: #68758d;
+            color: white;
+}
+.happy {
+            background-color:#6c7588 ;
+}
+.crazy {
+            background-color: #646d50;
+}
+h1 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            background-color:#4f915b ;
+            color: #134631;
+}
+li {
+    color: #56c0ae;
+    font-family: 'Merriweather', serif;
+}
+p {
+    font-family: 'Neuton', serif;
+    font-size: 1.5em;
+}
+/* Pseudoclasses são divididas em duas : Estruturais e Dinâmicas, são elas:
+        Dinâmicas : :Hover, :Active, :Visited e :Focus.
+        Hover = quando passamos o mouse por cima do elemento
+        Active = quando ativamos o elemento (clicando nele e segurando ele está agindo)
+        Visited = quando o link é visitado
+        Focus = quando o elementos recebe foco, quando clicamos em cima um campo de texto para escrever o elemento esta ganhando foco.*/
+/*
+        Estruturais: :first-chil, :last-child, :root, :nth-child(), :lang().
+        first
+
+        */

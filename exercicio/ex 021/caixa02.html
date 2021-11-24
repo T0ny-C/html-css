@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags </title>
+    <style>
+        body{
+            background-color: #D4C2FC;
+            padding: 5px 10px;
+            margin: 10px;
+        }
+        h1{
+            padding-left: 5px;
+            box-shadow: inset 10px 6px 12px 2px rgba(0, 0, 0, 0.356);
+            /* A sequencia coreta de se fazer um box shadow que preste é o primeiro valor é para deslocamento horizontal, o segundo para deslocamento vertical, o terceiro é para embasamento da sombra e o quarto é para espalhamento da sombra e quando tem um quinto valor é o de transparência  */
+        }
+
+        header{
+            background-color:#F9F5FF;
+            padding: 5px 10px;
+            margin: 10px;
+        }
+        nav{
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        nav > a{
+            padding-right: 2px;
+        }
+        main{
+            background-color: #F9F5FF;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+            margin: 10px;
+        }
+
+        article > p{
+            background-color: rgb(224, 76, 76);
+            padding: 3px;
+        }
+        
+        aside > p{
+            color: rgb(64, 85, 22);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        
+        .ferramenta{
+            color: rgb(0, 255, 13);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav class="sumido">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Futebol </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, rem inventore? Explicabo, debitis natus neque possimus asperiores ducimus, exercitationem magnam voluptate consequatur et eos nostrum adipisci, quod maxime necessitatibus impedit?</p>
+                <aside>
+                    <p>Artigo escrito por José Tadeu</p>
+                </aside>
+            </article>
+            <article>
+                <p>Article podem ficar tanto dentro de sections e asides e ambos podem ficar uns dentro dos outros </p>
+            </article>
+        </section>
+                <a href="caixa01.html">Vá para a página 01</a>
+                <br>
+                <a href="caixa00.html">Vá para a pagina principal </a>
+                <section>
+                    <aside class="ferramenta" >
+                        <p>Usamos a ferramenta do Dev Tools para ajudar quando formos fazer alguma sugestão ou tipo de sombra e também na hora de estudar sobre as sombras e outros tipo de formatações de CSS </p>
+                    </aside>
+                    <article>
+                        <p>Para escolher uma cor para sua sombra sempre use a cor preto e mexa apenas a transparencia dela no vs code </p>
+                    </article>
+                </section>
+        
+    </main>
+    <footer>
+        <p>Ensinado pelo curso em video, mas foi o Antonio que fez hehehe </p>
+    </footer>
+    
+</body>
+</html>
